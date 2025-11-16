@@ -1,111 +1,139 @@
-# Restaurant-Data-Analysis-Project
-A Python-based restaurant data analysis project using Pandas. Includes data cleaning, preprocessing, handling missing values, and generating insights on customer behaviour by gender, meal time, day, smoking status, and tipping patterns. Provides clear, organised results for real-world analysis.
+Restaurant Data Analysis Project
 
-# Tips Data Analysis & Visualization Project
+A complete restaurant data analysis project built using Python, Pandas, Matplotlib, Seaborn, and ReportLab. 
+ 
+This project performs data cleaning, statistical analysis, visualization, and automated PDF report generation based on the classic Tips dataset.
 
-This project performs advanced data analysis, visualization, and automated reporting using the famous Seaborn Tips dataset.
-It includes:
+---
 
-•	14 detailed statistical analyses
-•	Automatic generation of high-quality charts (PNG, PDF, SVG)
-•	A professionally formatted PDF report
-•	A PDF exporter for Python source files
-•	Clean, modular Python scripts
-________________________________________
 Project Structure
 
-project/
+Restaurant-Data-Analysis-Project/
 │
-├── tips.csv
-├── tips.py                # Main analysis + PDF report generator
-├── tips_charts.py         # Chart generator (PNG/PDF/SVG)
-├── py_to_pdf.py           # Python-to-PDF converter
-├── tips_script.pdf
-├── tips_charts.pdf
-├── tips_advanced_report.pdf
-│
-└── charts/
-    ├── png/
-    ├── pdf/
-    └── svg/
+├── data/               # Contains tips.csv dataset
+├── src/                # Python scripts (analysis, charts, pdf converter)
+├── charts/             # Auto-generated PNG, PDF, and SVG charts
+├── reports/            # Auto-generated PDF reports
+└── README.md
 ________________________________________
- Features
- 
-1. Complete Dataset Analysis (14 Analyses)
-Includes:
+Features
 
-•	Gender distribution by time of day
-•	Gender distribution by day of week
-•	Smoker vs. non-smoker breakdown
-•	Total tip amount by gender
-•	Average tips and tip percentages
-•	Tip percentages by day and time
-•	Group-size analyses
-•	Correlation matrix
-•	Revenue per day
-•	Top 10 highest tip percentages
-All analyses are printed in the terminal and included in a structured PDF.
-________________________________________
-2. High-Quality Chart Generation
+1. Data Analysis (src/tips.py)
    
-The script generates multiple charts, including:
+•	Gender-based tipping comparison
+•	Tip percentage distribution
+•	Total revenue per day
+•	Smoking vs. tipping behaviour
+•	Correlation matrix
+•	Top 10 highest tip-percentage customers
+•	Generates a formatted PDF report in reports/
+________________________________________
 
-•	Scatter plots
-•	Histograms
-•	Bar charts
-•	Clustered bar charts
+2. Data Visualisation (src/tips_charts.py)
+
+Automatically generates:
+•	Scatter plot: Total Bill vs Tip
+•	Histogram: Tip Percentage Distribution
+•	Bar charts:
+    o	Average tip percentage by day
+    o	Customer count per day
+    o	Average tip by group size
+    o	Total revenue per day
+    o	Gender count by time and by day
+    o	Tip percentage by smoker status
 •	Correlation heatmap
-Charts are automatically saved in:
-charts/png/
-charts/pdf/
-charts/svg/
-________________________________________
- 3. Professional PDF Reporting
-    
-The script generates:
 
-•	tips_advanced_report.pdf – statistical tables in color
-•	tips_script.pdf – Python script exported as a styled PDF
-•	tips_charts.pdf – chart script exported as PDF
-All PDF creation uses ReportLab.
+Charts are saved to:
+•	charts/png/
+•	charts/pdf/
+•	charts/svg/
 ________________________________________
+
+3. Python to PDF Conversion (src/py_to_pdf_converter.py)
+Converts Python scripts into formatted, readable PDF files using ReportLab:
+
+•	tips.py → reports/tips_script.pdf
+•	tips_charts.py → reports/tips_charts.pdf
+________________________________________
+
+Installation
+
+1. Clone the repository
+
+git clone https://github.com/YOUR_USERNAME/Restaurant-Data-Analysis-Project.git
+cd Restaurant-Data-Analysis-Project
+
+Replace YOUR_USERNAME with your GitHub username.
+
+2. (Optional) Create a virtual environment
+
+python -m venv venv
+
+# Windows:
+venv\Scripts\activate
+
+# macOS / Linux:
+
+source venv/bin/activate
+
+3. Install dependencies
+pip install -r requirements.txt
+________________________________________
+
 How to Run
 
-Install dependencies
-pip install pandas matplotlib seaborn reportlab
-Run the analysis + PDF generator
-python tips.py
-Generate charts
-python tips_charts.py
-Convert Python scripts to PDF
-python py_to_pdf_converter.py
-________________________________________
-Generated Outputs
+Run the main analysis and generate the PDF report
+python src/tips.py
 
-•	Terminal Output:
-Cleanly formatted printout of all analyses.
-•	PDF Report:
-  o	Colored tables
-  o	14 analysis sections
-  o	High-resolution charts (via charts script)
-•	Charts: 
-Available in PNG, PDF, and SVG formats.
+This will:
+•	Print all 14 analyses in the terminal
+•	Generate reports/tips_advanced_report.pdf
 ________________________________________
+
+Generate all charts
+python src/tips_charts.py
+
+This will create charts inside:
+•	charts/png/
+•	charts/pdf/
+•	charts/svg/
+________________________________________
+
+Convert Python scripts to PDF
+python src/py_to_pdf_converter.py
+
+This will create:
+•	reports/tips_script.pdf
+•	reports/tips_charts.pdf
+________________________________________
+
 Dependencies
 
-•	Python 3.8+
+Main libraries:
 •	pandas
+•	numpy
 •	matplotlib
 •	seaborn
 •	reportlab
+
+See requirements.txt for the full list.
 ________________________________________
-Contributions
+License
 
-Pull requests are welcome!
-Feel free to contribute:
+This project is licensed under the MIT License.
+See the LICENSE file for details.
+________________________________________
 
-•	More visualizations
-•	New statistical models
-•	Machine learning predictions
-•	Dashboard (Streamlit / Flask)
+Contributing
 
+Pull requests are welcome.
+
+You can improve:
+•	Visualisations
+•	Statistical analyses
+•	Report formatting
+•	Code structure
+________________________________________
+Support
+
+If you find this project useful, please consider giving the repository a star ⭐

@@ -11,9 +11,9 @@ Project Structure
 Restaurant-Data-Analysis-Project/
 
 ___data/               # Contains tips.csv dataset
-___ src/                # Python scripts (analysis, charts, pdf converter)
-___ charts/             # Auto-generated PNG, PDF, and SVG charts
-___ reports/            # Auto-generated PDF reports
+___ src/               # Python scripts (analysis, charts, pdf converter)
+___ charts/            # Auto-generated PNG, PDF, and SVG charts
+___ reports/           # Auto-generated PDF reports
 ___ README.md
 ________________________________________
 Features

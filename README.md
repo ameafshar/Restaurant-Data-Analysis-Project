@@ -9,12 +9,12 @@ This project performs data cleaning, statistical analysis, visualization, and au
 Project Structure
 
 Restaurant-Data-Analysis-Project/
-│
-├── data/               # Contains tips.csv dataset
-├── src/                # Python scripts (analysis, charts, pdf converter)
-├── charts/             # Auto-generated PNG, PDF, and SVG charts
-├── reports/            # Auto-generated PDF reports
-└── README.md
+
+___data/               # Contains tips.csv dataset
+___ src/                # Python scripts (analysis, charts, pdf converter)
+___ charts/             # Auto-generated PNG, PDF, and SVG charts
+___ reports/            # Auto-generated PDF reports
+___ README.md
 ________________________________________
 Features
 
